@@ -14,8 +14,15 @@
     "url": "https://github.com/jindaliiita/edge-optimize-router-3/issues"
   },
   "homepage": "https://github.com/jindaliiita/edge-optimize-router-3#readme",
-  "author": "",
+  "author": "Adobe",
   "license": "Apache-2.0",
+  "keywords": [
+    "cloudflare-worker",
+    "edge",
+    "optimization",
+    "router",
+    "tokowaka"
+  ],
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
