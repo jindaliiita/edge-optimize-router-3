@@ -6,6 +6,11 @@ A Cloudflare Worker that acts as an edge-side optimization router for the Tokowa
 
 This worker sits in front of origin servers and applies edge-level optimizations — including request routing, response transformation, and performance enhancements — without adding latency to the critical path.
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) >= 20
+- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/) for local development and deployment
+
 ## Configuration
 
 The worker is configured via `wrangler.toml`:
@@ -13,6 +18,19 @@ The worker is configured via `wrangler.toml`:
 | Variable | Description |
 |---|---|
 | `EDGE_OPTIMIZE_TARGET_HOST` | The origin host to proxy and optimize requests for |
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start local dev server
+npx wrangler dev
+
+# Deploy to Cloudflare Workers
+npx wrangler deploy
+```
 
 ## Releases
 
