@@ -16,6 +16,9 @@
   "homepage": "https://github.com/jindaliiita/edge-optimize-router-3#readme",
   "author": "Adobe",
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  },
   "keywords": [
     "cloudflare-worker",
     "edge",

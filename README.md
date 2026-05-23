@@ -10,6 +10,7 @@ This worker sits in front of origin servers and applies edge-level optimizations
 
 - [Node.js](https://nodejs.org/) >= 20
 - [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/) for local development and deployment
+- A Cloudflare account with Workers enabled
 
 ## Configuration
 
@@ -18,6 +19,14 @@ The worker is configured via `wrangler.toml`:
 | Variable | Description |
 |---|---|
 | `EDGE_OPTIMIZE_TARGET_HOST` | The origin host to proxy and optimize requests for |
+
+### Environments
+
+| Environment | Worker Name | Purpose |
+|---|---|---|
+| `dev` | `edge-optimize-router-3-dev` | Development testing |
+| `staging` | `edge-optimize-router-3-staging` | Pre-production validation |
+| production | `edge-optimize-router-3` | Live traffic |
 
 ## Development
 
@@ -28,7 +37,9 @@ npm install
 # Start local dev server
 npx wrangler dev
 
-# Deploy to Cloudflare Workers
+# Deploy to specific environment
+npx wrangler deploy --env dev
+npx wrangler deploy --env staging
 npx wrangler deploy
 ```
 
@@ -44,6 +55,10 @@ Releases are automated via [semantic-release](https://semantic-release.gitbook.i
 | `fix:` | Patch release |
 | `chore:`, `docs:`, `style:` | No release |
 | `BREAKING CHANGE` | Major release |
+
+## Contributing
+
+All changes must go through a pull request. Direct pushes to `main` are not allowed.
 
 ## License
 
