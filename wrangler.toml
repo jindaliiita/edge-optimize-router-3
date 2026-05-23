@@ -7,6 +7,13 @@ preview_urls = false
 [observability]
 enabled = true
 
+[env.dev]
+name = "edge-optimize-router-3-dev"
+vars = { EDGE_OPTIMIZE_TARGET_HOST = "dev.example.com" }
+
+[env.staging]
+name = "edge-optimize-router-3-staging"
+vars = { EDGE_OPTIMIZE_TARGET_HOST = "staging.example.com" }
+
 [vars]
 EDGE_OPTIMIZE_TARGET_HOST = "www.example.com"
-
