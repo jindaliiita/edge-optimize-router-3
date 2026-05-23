@@ -1,6 +1,6 @@
 {
   "name": "edge-optimize-router-3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Cloudflare Worker for edge-side request routing and optimization in the Tokowaka platform",
   "scripts": {
