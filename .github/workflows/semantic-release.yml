@@ -15,6 +15,7 @@ jobs:
   release:
     name: Semantic Release
     runs-on: ubuntu-latest
+    environment: MAIN
     # Skip the release commit itself (created by @semantic-release/git)
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
