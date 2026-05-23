@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jindaliiita/edge-optimize-router-3/compare/v1.0.1...v1.1.0) (2026-05-23)
+
+
+### Features
+
+* add author, keywords to package.json and expand README ([7693331](https://github.com/jindaliiita/edge-optimize-router-3/commit/7693331154b43456211d34e2eccca7f4943a1292))
+
 ## [1.0.1](https://github.com/jindaliiita/edge-optimize-router-3/compare/v1.0.0...v1.0.1) (2026-05-23)
 
 
